@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyDashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- NAVIGATION BAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="logo-mark">M</span> MyDashboard</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="#about">About</a></li>
+
+      <li class="has-dropdown">
+        <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+          Project
+          <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 3l4 4 4-4"/></svg>
+        </button>
+        <div class="mega">
+          <div>
+            <h4>Web</h4>
+            <ul>
+              <li><a href="#project">Portfolio Website</a></li>
+              <li><a href="#project">E-Commerce</a></li>
+              <li><a href="#project">Landing Page</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>IoT</h4>
+            <ul>
+              <li><a href="#project">Smart Monitoring</a></li>
+              <li><a href="#project">Sensor Suhu</a></li>
+              <li><a href="#project">Embedded System</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kampus</h4>
+            <ul>
+              <li><a href="#project">Struktur Data</a></li>
+              <li><a href="#project">Matriks &amp; Vektor</a></li>
+              <li><a href="#project">Tugas Kelompok</a></li>
+            </ul>
+          </div>
+          <div class="mega-card">
+            <div>
+              <h4>Project Terbaru</h4>
+              <p>Lihat project yang sedang saya kerjakan saat ini.</p>
+            </div>
+            <a href="#project" class="btn">Lihat project »</a>
+          </div>
+        </div>
+      </li>
+
+      <li><a class="nav-link" href="#keahlian">Keahlian</a></li>
+      <li><a class="nav-link" href="#sertifikat">Sertifikat</a></li>
+    </ul>
+
+    <a href="#contact" class="btn nav-cta">Hubungi Saya »</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- DASHBOARD / HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <span class="badge">👋 Selamat datang</span>
+    <h1>MyDashboard<br>Ringkasan karya &amp; pencapaian saya.</h1>
+    <p class="typing">Saya seorang <strong id="typed"></strong><span class="cursor">|</span></p>
+    <p>Pantau project yang sedang dikerjakan, sertifikat yang telah diraih, dan temukan cara menghubungi saya di satu tempat.</p>
+    <div class="hero-actions">
+      <a href="#project" class="btn">Lihat Project »</a>
+      <a href="#sertifikat" class="btn outline">Lihat Sertifikat</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="4">0</b><span>Project</span></div>
+      <div class="stat"><b data-count="1">0</b><span>Sertifikat</span></div>
+      <div class="stat"><b data-count="2">0</b><span>Project berjalan</span></div>
+      <div class="stat"><b data-count="100" data-suffix="%">0</b><span>Semangat belajar</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="alt" id="about">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <p class="section-sub">Sedikit tentang saya</p>
+    <div class="about-grid">
+      <div class="about-photo">N</div>
+      <div>
+        <h3>Naufal Luqman Aliif</h3>
+        <p>Mahasiswa yang antusias di dunia teknologi. Saya suka membangun website, bereksperimen dengan IoT dan sistem embedded, serta terus belajar struktur data dan logika pemrograman.</p>
+        <p>Website ini adalah tempat saya mengumpulkan project, sertifikat, dan perjalanan belajar saya.</p>
+        <ul class="about-info">
+          <li><span>📍 Lokasi</span> Indonesia</li>
+          <li><span>🎓 Status</span> Mahasiswa</li>
+          <li><span>💼 Minat</span> Web, IoT, Embedded</li>
+        </ul>
+        <a href="#contact" class="btn">Ayo Berkolaborasi »</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEAHLIAN -->
+<section id="keahlian">
+  <div class="container">
+    <h2 class="section-title">Keahlian</h2>
+    <p class="section-sub">Teknologi dan bidang yang sedang saya dalami</p>
+    <div class="skills">
+      <div class="skill"><div class="skill-top"><span>HTML &amp; CSS</span><span>85%</span></div><div class="bar"><span data-level="85"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>JavaScript</span><span>70%</span></div><div class="bar"><span data-level="70"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Struktur Data</span><span>65%</span></div><div class="bar"><span data-level="65"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>IoT &amp; Embedded</span><span>60%</span></div><div class="bar"><span data-level="60"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Matriks &amp; Vektor</span><span>60%</span></div><div class="bar"><span data-level="60"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="alt" id="project">
+  <div class="container">
+    <h2 class="section-title">Project</h2>
+    <p class="section-sub">Project yang sedang dan telah saya buat</p>
+    <div class="filters">
+      <button class="chip active" data-filter="all">Semua</button>
+      <button class="chip" data-filter="web">Web</button>
+      <button class="chip" data-filter="iot">IoT</button>
+      <button class="chip" data-filter="Berjalan">Berjalan</button>
+    </div>
+    <div class="grid">
+      <!--Project 1-->
+      <article class="card" data-cat="web Selesai">
+        <div class="thumb">
+          <img src="https://picsum.photos/seed/project3/600/400.jpg" alt="Portfolio Website" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="body">
+          <h3>Portfolio Website</h3>
+          <p>Website portfolio pribadi dengan HTML, CSS, dan JavaScript.</p>
+          <span class="tag">Selesai</span>
+          <div class="project-links">
+            <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub Portfolio Website">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.28c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!--Project 2-->
+      <article class="card" data-cat="web Berjalan">
+        <div class="thumb">
+          <img src="https://picsum.photos/seed/project1/600/400.jpg" alt="E-Commerce Platform" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="body">
+          <h3>E-Commerce Platform</h3>
+          <p>Platform e-commerce dengan katalog, checkout, dan administrasi produk.</p>
+          <span class="tag">Berjalan</span>
+          <div class="project-links">
+            <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub E-Commerce Platform">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.28c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!--Project 3-->
+      <article class="card" data-cat="iot Berjalan">
+        <div class="thumb">
+          <img src="https://picsum.photos/seed/project4/600/400.jpg" alt="IoT Monitoring" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="body">
+          <h3>IoT Monitoring</h3>
+          <p>Pemantauan sensor secara real-time menggunakan mikrokontroler.</p>
+          <span class="tag">Berjalan</span>
+          <div class="project-links">
+            <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub IoT Monitoring">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.28c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <!--Project 4-->
+      <article class="card" data-cat="web Selesai">
+        <div class="thumb">
+          <img src="https://picsum.photos/seed/project2/600/400.jpg" alt="Fitness Tracker App" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="body">
+          <h3>Fitness Tracker App</h3>
+          <p>Aplikasi memantau aktivitas harian dan target kebugaran.</p>
+          <span class="tag">Selesai</span>
+          <div class="project-links">
+            <a class="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Buka GitHub Fitness Tracker App">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.29-1.23 3.29-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.28c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERTIFIKAT -->
+<section id="sertifikat">
+  <div class="container">
+    <h2 class="section-title">Sertifikat</h2>
+    <p class="section-sub">Pelatihan dan penghargaan yang telah diraih</p>
+    <div class="grid">
+      <article class="card">
+        <a class="cert-target" href="sertifikat/sertif_a112516242.png" target="_blank" rel="noopener noreferrer" aria-label="Buka foto Sertifikat BTNG 2025">
+          <div class="thumb cert"><img src="sertifikat/sertif_a112516242.png" alt="Sertifikat BTNG 2025" loading="lazy"></div>
+        </a>
+        <div class="body"><h3><a class="cert-title" href="sertifikat/sertif_a112516242.png" target="_blank" rel="noopener noreferrer">BTNG 2025</a></h3><p>Pelatihan dasar untuk mahasiswa dengan fokus pada teknologi dan pengembangan diri.</p><span class="tag">2025</span></div>
+      </article>
+      <article class="card">
+        <a class="cert-target" href="sertifikat/sertifikat_course_905_5848637_140626223347.pdf" target="_blank" rel="noopener noreferrer" aria-label="Buka PDF Sertifikat Coding Camp 2026">
+          <div class="thumb cert cert-pdf"><span>Buka sertifikat PDF ↗</span></div>
+        </a>
+        <div class="body"><h3><a class="cert-title" href="sertifikat/sertifikat_course_905_5848637_140626223347.pdf" target="_blank" rel="noopener noreferrer">Coding Camp 2026 Batch 2.0</a></h3><p>Program beasiswa belajar soft skill di bidang Full-Stack Web Developer.</p><span class="tag">2026</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PERJALANAN -->
+<section class="alt" id="perjalanan">
+  <div class="container">
+    <h2 class="section-title">Perjalanan</h2>
+    <p class="section-sub">Langkah-langkah belajar saya</p>
+    <div class="timeline">
+      <div class="tl-item"><span class="tl-year">2025</span><h3>Mengikuti BTNG 2025</h3><p>Basic Training for Next Generation, pelatihan teknologi dan pengembangan diri.</p></div>
+      <div class="tl-item"><span class="tl-year">2026</span><h3>Mengikuti Coding Camp 2026 Batch 2.0 by DBS Foundation</h3><p>Program beasiswa belajar soft skill di bidang Full-Stack Web Developer.</p></div>
+      <div class="tl-item"><span class="tl-year">2026</span><h3>Membangun Portfolio &amp; Project Web</h3><p>Website portfolio, Edutech: Edukasi Teknologi Seputar Website Di Bidang Web Development, IP Calculator</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Punya pertanyaan atau ingin berkolaborasi?</p>
+    <form class="contact-box" onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda terkirim.'); this.reset();">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Pesan" required></textarea>
+      <button class="btn" type="submit">Kirim Pesan »</button>
+    </form>
+  </div>
+</section>
+
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+<footer>© 2026 MyDashboard. Semua hak dilindungi.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
