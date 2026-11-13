@@ -60,7 +60,7 @@ if (toTop) toTop.addEventListener('click', () => window.scrollTo({ top: 0, behav
 // Efek mengetik di hero
 const typed = document.getElementById('typed');
 if (typed) {
-  const words = ['Mahasiswa Teknologi', 'Web Developer Pemula', 'Penggemar IoT'];
+  const words = ['Mahasiswa Teknik Informatika', 'Web Developer Junior', 'Penggemar IoT'];
   let w = 0, c = 0, del = false;
   (function type() {
     typed.textContent = words[w].slice(0, c);
