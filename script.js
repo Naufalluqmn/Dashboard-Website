@@ -79,7 +79,10 @@ const ro = new IntersectionObserver((entries) => {
     el.classList.add('show');
     const num = el.querySelector('[data-count]');
     if (num) {
-      const target = +num.dataset.count, suffix = num.dataset.suffix || '';
+      const target = num.dataset.count === 'auto'
+        ? document.querySelectorAll(num.dataset.countSelector).length
+        : +num.dataset.count;
+      const suffix = num.dataset.suffix || '';
       let n = 0; const step = Math.max(1, Math.ceil(target / 40));
       const t = setInterval(() => { n = Math.min(target, n + step); num.textContent = n + suffix; if (n >= target) clearInterval(t); }, 30);
     }
